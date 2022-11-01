@@ -1,8 +1,10 @@
 <div id="<%= dom_id message %>">
   <p>
     <strong>Text:</strong>
-     <%= message.body %>
+      <%= message.body %>
     <span> 
       <small> Sent at: <%= message.created_at %>  </small> </span> 
     </p>
+  <%= link_to "Show this message", message %>
 </div>
+
